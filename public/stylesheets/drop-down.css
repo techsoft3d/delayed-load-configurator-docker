@@ -1,16 +1,13 @@
 .dropdown {
-    position: relative;
-    display: none;
+    position: absolute;
     z-index: 100;
-    float: right;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top:10px;
+    right: 5px;
+    top:2px;
     font-weight: bold;
 }
 
 .drop-button {
-    background-color: #0090d0;
+    background-color: #808080;
     color: white;
     padding: 10px;
     font-size: 16px;
@@ -19,6 +16,46 @@
     width: 150px;
     border-radius: 1px;
     border: 1px solid black;
+    visibility: hidden;
+    opacity: 0.25
+    
+}
+
+.request-car-button {
+    background-color: #0090d0;
+    color: white;
+    padding: 10px;
+    top: 2px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 1px;
+    border: 1px solid black;
+    z-index: 1;
+    position: absolute;
+    right: 340px;
+    visibility: hidden
+
+}
+
+.request-piston-button {
+    background-color: #808080;
+    color: white;
+    padding: 10px;
+    top: 2px;
+    font-size: 16px;
+    border: none;
+    cursor: default;
+    width: 150px;
+    border-radius: 1px;
+    border: 1px solid black;
+    z-index: 1;
+    position: absolute;
+    right: 170px;
+    visibility: hidden;
+    opacity: 0.25
+
 }
 
 .dropdown-content {
@@ -61,6 +98,7 @@
 
 .dropdown-text {
     float: right;
+    margin-right: 5px;
 }
 
 a img {
@@ -68,8 +106,7 @@ a img {
     height: 50px;
 }
 
-.spinner {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
+@media only screen and (max-width:480px) {
+    .menu { display: none; }
+    #info h3.smartphone { display: block; }
 }
