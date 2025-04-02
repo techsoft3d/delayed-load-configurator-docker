@@ -2,7 +2,7 @@
 
 <head>
     <title>
-        Delayed Load / Configurator | HOOPS Web Viewer
+        Staging Delayed Load / Configurator | HOOPS Web Viewer
     </title>
 
 
@@ -47,7 +47,7 @@
         async function startViewer() {
 
 
-            var server = new ServerConnection("https://delayed-load-configrator-docker.techsoft3d.com"); //change to IP of host server
+            var server = new ServerConnection("https://delayed-load-configrator-docker-staging.techsoft3d.com"); //change to IP of host server
 
             await server.connect();
             viewer = new Communicator.WebViewer({
